@@ -89,7 +89,7 @@ get_attachment() {
 exec_text_only(){
     echo "open $SERVER 25"
     sleep 2
-    echo "EHLO"
+    echo "EHLO $SERVER"
     sleep 2
     echo "MAIL FROM: $SENDER"
     sleep 2
@@ -122,7 +122,7 @@ exec_text_only(){
 exec_text_attach(){
     echo "open $SERVER 25"
     sleep 2
-    echo "EHLO"
+    echo "EHLO $SERVER"
     sleep 2
     echo "MAIL FROM: $SENDER"
     sleep 2
@@ -162,7 +162,7 @@ exec_text_attach(){
 exec_attach_only(){
     echo "open $SERVER 25"
     sleep 2
-    echo "EHLO"
+    echo "EHLO $SERVER"
     sleep 2
     echo "MAIL FROM: $SENDER"
     sleep 2
