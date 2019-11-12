@@ -57,8 +57,8 @@ explain() {
 text_from_file() { 
     echo "Enter filename whose contents will be the message body:"
     read -p '> ' TEXTFILE
-    if [[ -f $TEXTFILE ]]; then
-        readarray TEXTARR < $TEXTFILE
+    if [[ -f "${TEXTFILE}" ]]; then
+        IFS=$'\n' read -d '' -r -a TEXTARR < "${TEXTFILE}"
     else
         echo "That file does not appear to exist, did you include the path?"
         text_from_file

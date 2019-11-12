@@ -1,1 +1,0 @@
-# IPs with port 25 open go here :)
