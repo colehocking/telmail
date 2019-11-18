@@ -214,7 +214,7 @@ main() {
         case $txtbody in
             "Plaintext from file" ) CT="plain"; text_from_file; break;;
             "HTML from file" ) CT="html"; text_from_file; break;;
-            "Enter plaintext manually" ) CT="plain" text_from_stdin; break;;
+            "Enter plaintext manually" ) CT="plain"; text_from_stdin; break;;
             "Enter HTML manually" ) CT="html"; text_from_stdin; break;;
             "No body text" ) ADDTXT=0; break;;
         esac
